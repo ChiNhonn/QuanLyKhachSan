@@ -1,3 +1,4 @@
+using QuanLyKhachSan.Views;
 namespace QuanLyKhachSan
 {
     internal static class Program
