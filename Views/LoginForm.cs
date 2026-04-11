@@ -38,7 +38,6 @@ namespace QuanLyKhachSan
             if (tendangnhap == taikhoan.TenDangNhap && matkhau == taikhoan.MatKhau)
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
                 MainForm mainForm = new MainForm();
                 mainForm.ShowDialog();
                 this.Close();
@@ -59,6 +58,13 @@ namespace QuanLyKhachSan
         private void btnDangKy_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            QuenMKForm quenMKForm = new QuenMKForm();
+            quenMKForm.Show();
+            this.Hide();
         }
     }
 }

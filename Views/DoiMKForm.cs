@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace QuanLyKhachSan.Views
 {
-    public partial class MainForm : Form
+    public partial class DoiMKForm : Form
     {
-        public MainForm()
+        public DoiMKForm()
         {
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void txtNhapMK_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtNhapMaOTP_TextChanged(object sender, EventArgs e)
+        {
+            txtNhapMaOTP.Focus();
         }
     }
 }

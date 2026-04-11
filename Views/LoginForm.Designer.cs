@@ -149,6 +149,7 @@
             linkQuenMK.TabIndex = 7;
             linkQuenMK.TabStop = true;
             linkQuenMK.Text = "Quên mật khẩu?";
+            linkQuenMK.LinkClicked += linkQuenMK_LinkClicked;
             // 
             // LoginForm
             // 
