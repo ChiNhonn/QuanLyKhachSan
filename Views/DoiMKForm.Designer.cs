@@ -42,10 +42,10 @@
             // 
             lblMaOTP.AutoSize = true;
             lblMaOTP.BackColor = Color.Transparent;
-            lblMaOTP.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            lblMaOTP.Font = new Font("Segoe UI Emoji", 13.2000008F, FontStyle.Bold);
             lblMaOTP.Location = new Point(12, 55);
             lblMaOTP.Name = "lblMaOTP";
-            lblMaOTP.Size = new Size(167, 31);
+            lblMaOTP.Size = new Size(175, 31);
             lblMaOTP.TabIndex = 0;
             lblMaOTP.Text = "Nhập Mã OTP:";
             // 
@@ -53,10 +53,10 @@
             // 
             lblMKlan1.AutoSize = true;
             lblMKlan1.BackColor = Color.Transparent;
-            lblMKlan1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            lblMKlan1.Font = new Font("Segoe UI Emoji", 13.2000008F, FontStyle.Bold);
             lblMKlan1.Location = new Point(12, 148);
             lblMKlan1.Name = "lblMKlan1";
-            lblMKlan1.Size = new Size(194, 31);
+            lblMKlan1.Size = new Size(203, 31);
             lblMKlan1.TabIndex = 1;
             lblMKlan1.Text = "Nhập Mật Khẩu: ";
             // 
@@ -64,10 +64,10 @@
             // 
             lblMKlan2.AutoSize = true;
             lblMKlan2.BackColor = Color.Transparent;
-            lblMKlan2.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold);
+            lblMKlan2.Font = new Font("Segoe UI Emoji", 13.2000008F, FontStyle.Bold);
             lblMKlan2.Location = new Point(12, 239);
             lblMKlan2.Name = "lblMKlan2";
-            lblMKlan2.Size = new Size(231, 31);
+            lblMKlan2.Size = new Size(243, 31);
             lblMKlan2.TabIndex = 2;
             lblMKlan2.Text = "Nhập Lại Mật Khẩu: ";
             // 
@@ -115,6 +115,7 @@
             // btnXacNhan
             // 
             btnXacNhan.BackColor = Color.Transparent;
+            btnXacNhan.Cursor = Cursors.Hand;
             btnXacNhan.FlatAppearance.BorderColor = Color.Black;
             btnXacNhan.FlatAppearance.BorderSize = 2;
             btnXacNhan.FlatStyle = FlatStyle.Flat;
@@ -128,6 +129,7 @@
             // 
             // DoiMKForm
             // 
+            AcceptButton = btnXacNhan;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
