@@ -70,5 +70,20 @@ namespace QuanLyKhachSan.Views
             login.Show();
             this.Close();
         }
+
+        private void btnDatPhong_Click_1(object sender, EventArgs e)
+        {
+            chuyentrang(new usDatPhong());
+        }
+
+        private void btnDichVu_Click_1(object sender, EventArgs e)
+        {
+            chuyentrang(new usDichVu());
+        }
+
+        private void btnThongKe_Click_1(object sender, EventArgs e)
+        {
+            chuyentrang(new usThongKe());
+        }
     }
 }

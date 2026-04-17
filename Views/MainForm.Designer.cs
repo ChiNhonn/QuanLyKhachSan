@@ -90,6 +90,7 @@
             btnThongKe.TabIndex = 4;
             btnThongKe.Text = "Thống Kê";
             btnThongKe.UseVisualStyleBackColor = true;
+            btnThongKe.Click += btnThongKe_Click_1;
             // 
             // btnDichVu
             // 
@@ -101,6 +102,7 @@
             btnDichVu.TabIndex = 3;
             btnDichVu.Text = "Dịch vụ";
             btnDichVu.UseVisualStyleBackColor = true;
+            btnDichVu.Click += btnDichVu_Click_1;
             // 
             // btnDatPhong
             // 
@@ -112,6 +114,7 @@
             btnDatPhong.TabIndex = 2;
             btnDatPhong.Text = "Đặt Phòng";
             btnDatPhong.UseVisualStyleBackColor = true;
+            btnDatPhong.Click += btnDatPhong_Click_1;
             // 
             // btnKhach
             // 

@@ -47,7 +47,6 @@
             Controls.Add(label1);
             Name = "usTrangChu";
             Size = new Size(896, 575);
-            Load += this.usTrangChu_Load;
             ResumeLayout(false);
             PerformLayout();
         }

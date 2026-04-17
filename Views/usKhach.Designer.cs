@@ -47,7 +47,6 @@
             Controls.Add(label1);
             Name = "usKhach";
             Size = new Size(1102, 531);
-            Load += this.usKhach_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -47,7 +47,6 @@
             Controls.Add(label1);
             Name = "usPhong";
             Size = new Size(1206, 483);
-            Load += this.usPhong_Load;
             ResumeLayout(false);
             PerformLayout();
         }
