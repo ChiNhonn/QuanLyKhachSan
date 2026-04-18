@@ -45,7 +45,7 @@
             txtUsername.Location = new Point(343, 107);
             txtUsername.Name = "txtUsername";
             txtUsername.PlaceholderText = "Name";
-            txtUsername.Size = new Size(125, 27);
+            txtUsername.Size = new Size(184, 27);
             txtUsername.TabIndex = 0;
             txtUsername.TextChanged += txtUsername_TextChanged;
             // 
@@ -54,7 +54,7 @@
             txtPassword.Location = new Point(343, 140);
             txtPassword.Name = "txtPassword";
             txtPassword.PlaceholderText = "Password";
-            txtPassword.Size = new Size(125, 27);
+            txtPassword.Size = new Size(184, 27);
             txtPassword.TabIndex = 1;
             txtPassword.UseSystemPasswordChar = true;
             // 
@@ -63,7 +63,7 @@
             txtConfirmPassword.Location = new Point(343, 173);
             txtConfirmPassword.Name = "txtConfirmPassword";
             txtConfirmPassword.PlaceholderText = "ConfirmPassword";
-            txtConfirmPassword.Size = new Size(125, 27);
+            txtConfirmPassword.Size = new Size(184, 27);
             txtConfirmPassword.TabIndex = 2;
             txtConfirmPassword.UseSystemPasswordChar = true;
             // 
@@ -72,25 +72,33 @@
             txtEmail.Location = new Point(343, 206);
             txtEmail.Name = "txtEmail";
             txtEmail.PlaceholderText = "Email";
-            txtEmail.Size = new Size(125, 27);
+            txtEmail.Size = new Size(184, 27);
             txtEmail.TabIndex = 3;
             // 
             // btnRegister
             // 
-            btnRegister.Location = new Point(356, 239);
+            btnRegister.BackColor = Color.Transparent;
+            btnRegister.FlatStyle = FlatStyle.Flat;
+            btnRegister.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegister.ForeColor = Color.Black;
+            btnRegister.Location = new Point(361, 239);
             btnRegister.Name = "btnRegister";
-            btnRegister.Size = new Size(94, 29);
+            btnRegister.Size = new Size(141, 43);
             btnRegister.TabIndex = 4;
             btnRegister.Text = "Đăng ký";
-            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btnRegister.UseVisualStyleBackColor = false;
             btnRegister.Click += btnRegister_Click;
             // 
             // linkLogin
             // 
             linkLogin.AutoSize = true;
-            linkLogin.Location = new Point(295, 271);
+            linkLogin.BackColor = Color.Transparent;
+            linkLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            linkLogin.LinkColor = Color.Red;
+            linkLogin.Location = new Point(312, 285);
             linkLogin.Name = "linkLogin";
-            linkLogin.Size = new Size(233, 20);
+            linkLogin.Size = new Size(242, 20);
             linkLogin.TabIndex = 5;
             linkLogin.TabStop = true;
             linkLogin.Text = "Đã có tài khoản? Đăng nhập ngay";
@@ -99,36 +107,44 @@
             // lblName
             // 
             lblName.AutoSize = true;
-            lblName.Location = new Point(200, 114);
+            lblName.BackColor = Color.Transparent;
+            lblName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblName.Location = new Point(169, 114);
             lblName.Name = "lblName";
-            lblName.Size = new Size(110, 20);
+            lblName.Size = new Size(116, 20);
             lblName.TabIndex = 6;
             lblName.Text = "Tên đăng nhập:";
             // 
             // lblConfirmPassword
             // 
             lblConfirmPassword.AutoSize = true;
-            lblConfirmPassword.Location = new Point(200, 180);
+            lblConfirmPassword.BackColor = Color.Transparent;
+            lblConfirmPassword.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblConfirmPassword.Location = new Point(169, 180);
             lblConfirmPassword.Name = "lblConfirmPassword";
-            lblConfirmPassword.Size = new Size(137, 20);
+            lblConfirmPassword.Size = new Size(147, 20);
             lblConfirmPassword.TabIndex = 7;
             lblConfirmPassword.Text = "Xác nhận mật khẩu:";
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Location = new Point(200, 147);
+            lblPassword.BackColor = Color.Transparent;
+            lblPassword.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPassword.Location = new Point(169, 147);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(73, 20);
+            lblPassword.Size = new Size(79, 20);
             lblPassword.TabIndex = 8;
             lblPassword.Text = "Mật khẩu:\r\n";
             // 
             // lblEmail
             // 
             lblEmail.AutoSize = true;
-            lblEmail.Location = new Point(200, 213);
+            lblEmail.BackColor = Color.Transparent;
+            lblEmail.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblEmail.Location = new Point(169, 213);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(49, 20);
+            lblEmail.Size = new Size(51, 20);
             lblEmail.TabIndex = 9;
             lblEmail.Text = "Email:";
             // 
@@ -136,6 +152,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.HInhnenRegister;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(lblEmail);
             Controls.Add(lblPassword);
