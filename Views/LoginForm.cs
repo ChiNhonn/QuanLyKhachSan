@@ -58,7 +58,9 @@ namespace QuanLyKhachSan
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.Show(); 
+            this.Hide();         
         }
 
         private void linkQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
