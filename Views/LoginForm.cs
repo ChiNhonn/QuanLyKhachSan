@@ -1,4 +1,6 @@
-﻿using QuanLyKhachSan.Models;
+﻿using QuanLyKhachSan.Helpers;
+using QuanLyKhachSan.Models;
+using QuanLyKhachSan.Services;
 using QuanLyKhachSan.Views;
 using System.Windows.Forms;
 
@@ -12,10 +14,9 @@ namespace QuanLyKhachSan
         }
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            AuthService au = new AuthService();
             string tendangnhap = txtTaiKhoan.Text.Trim();
             string matkhau = txtMatKhau.Text;
-
-            TaiKhoan taikhoan = new TaiKhoan("admin", "123456");
             if (string.IsNullOrWhiteSpace(tendangnhap) && string.IsNullOrWhiteSpace(matkhau))
             {
                 MessageBox.Show("Vui lòng nhập tên đăng nhập và mật khẩu!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -35,7 +36,7 @@ namespace QuanLyKhachSan
                 return;
             }
 
-            if (tendangnhap == taikhoan.TenDangNhap && matkhau == taikhoan.MatKhau)
+            if (au.Login(tendangnhap, matkhau))
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MainForm mainForm = new MainForm();
