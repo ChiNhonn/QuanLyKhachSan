@@ -79,7 +79,6 @@
             btnDangNhap.TabIndex = 2;
             btnDangNhap.Text = "Đăng Nhập";
             btnDangNhap.UseVisualStyleBackColor = false;
-            btnDangNhap.Click += btnDangNhap_Click;
             // 
             // btnDangKy
             // 
@@ -98,7 +97,6 @@
             btnDangKy.TabIndex = 3;
             btnDangKy.Text = "Đăng Ký";
             btnDangKy.UseVisualStyleBackColor = false;
-            btnDangKy.Click += btnDangKy_Click;
             // 
             // txtTaiKhoan
             // 
@@ -149,7 +147,6 @@
             linkQuenMK.TabIndex = 7;
             linkQuenMK.TabStop = true;
             linkQuenMK.Text = "Quên mật khẩu?";
-            linkQuenMK.LinkClicked += linkQuenMK_LinkClicked;
             // 
             // LoginForm
             // 
@@ -174,9 +171,6 @@
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Đăng Nhập";
-            Load += LoginForm_Load;
-            Shown += LoginForm_Load;
-            Enter += btnDangNhap_Click;
             ResumeLayout(false);
             PerformLayout();
         }
