@@ -1,33 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace QuanLyKhachSan.Models
+namespace QuanLyKhachSan.Models;
+
+public partial class TaiKhoan
 {
-    public class TaiKhoan
-    {
-        private string _tenDangNhap;
-        private string _matKhau;
-        public string TenDangNhap
-        {
-            get { return _tenDangNhap; }
-            set { 
-                _tenDangNhap = value;
-            }
-        }
-        public string MatKhau
-        {
-            get { return _matKhau; }
-            set { 
-                _matKhau = value;
-            }
-        }
-        public TaiKhoan(string tenDangNhap, string matKhau)
-        {
-            _tenDangNhap = tenDangNhap;
-            _matKhau = matKhau;
-        }
-    }
+    public int MaTaiKhoan { get; set; }
+
+    public string TenDangNhap { get; set; } = null!;
+
+    public string MatKhauHash { get; set; } = null!;
+
+    public string HoTenHienThi { get; set; } = null!;
+
+    public string? Email { get; set; }
+
+    public string? SoDienThoai { get; set; }
+
+    public string VaiTro { get; set; } = null!;
+
+    public string TrangThai { get; set; } = null!;
+
+    public DateTime? LanDangNhapCuoi { get; set; }
+
+    public DateTime NgayTao { get; set; }
+
+    public DateTime NgayCapNhat { get; set; }
 }

@@ -1,15 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace QuanLyKhachSan.Models
+namespace QuanLyKhachSan.Models;
+
+public partial class Phong
 {
-    public class Phong
-    {
-        int ma_phong;
-        string so_phong;
+    public int MaPhong { get; set; }
 
-    }
+    public string SoPhong { get; set; } = null!;
+
+    public int MaLoaiPhong { get; set; }
+
+    public byte? Tang { get; set; }
+
+    public string TrangThai { get; set; } = null!;
+
+    public string? GhiChu { get; set; }
+
+    public virtual ICollection<ChiTietDatPhong> ChiTietDatPhongs { get; set; } = new List<ChiTietDatPhong>();
+
+    public virtual LoaiPhong MaLoaiPhongNavigation { get; set; } = null!;
 }

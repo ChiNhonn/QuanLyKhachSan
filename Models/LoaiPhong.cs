@@ -1,12 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace QuanLyKhachSan.Models
+namespace QuanLyKhachSan.Models;
+
+public partial class LoaiPhong
 {
-    internal class LoaiPhong
-    {
-    }
+    public int MaLoaiPhong { get; set; }
+
+    public string TenLoaiPhong { get; set; } = null!;
+
+    public byte SucChuaToiDa { get; set; }
+
+    public decimal GiaCoBan { get; set; }
+
+    public string? MoTa { get; set; }
+
+    public virtual ICollection<Phong> Phongs { get; set; } = new List<Phong>();
 }

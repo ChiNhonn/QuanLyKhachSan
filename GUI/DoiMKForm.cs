@@ -26,5 +26,10 @@ namespace QuanLyKhachSan.Views
         {
             txtNhapMaOTP.Focus();
         }
+
+        private void btnXacNhan_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
