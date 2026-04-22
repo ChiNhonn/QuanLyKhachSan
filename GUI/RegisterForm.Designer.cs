@@ -1,4 +1,7 @@
-﻿namespace QuanLyKhachSan.Views
+﻿using QuanLyKhachSan.Properties;
+using System.Windows.Forms;
+
+namespace QuanLyKhachSan.Views
 {
     partial class RegisterForm
     {
